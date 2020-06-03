@@ -27,6 +27,12 @@ nav.nav-header, nav.nav-footer {
 	padding: 2%;
 	margin-right: 15%;
 	text-decoration: none;
+	position: relative;
+}
+
+.nav-link:hover {
+	animation-name: move;
+	animation-duration: 750ms;
 }
 
 .nav-link:last-of-type {
@@ -43,6 +49,11 @@ nav.nav-header, nav.nav-footer {
 
 .link-3 {
 	background-color: #FFCD69;
+}
+
+.car {
+	position: relative;
+	animation-name: move;
 }
 
 .main-header {
@@ -96,6 +107,11 @@ nav.nav-header, nav.nav-footer {
 	margin: 0 auto;
 }
 
+.bio-container:hover {
+	background-color: #22465C;
+	transition: 300ms;
+}
+
 .bio-container p {
 	margin-bottom: 2%;
 }
@@ -134,4 +150,10 @@ footer {
 	background-image: url('assets/footer_img.jpg');
 	background-size: cover;
 	background-position: center;
+}
+
+@keyframes move {
+	0% {top: 0px;}
+	50%{top: -5px;}
+	100%{top: 0px;}
 }
