@@ -8,6 +8,7 @@
 
 .main-container {
 	padding: 0 15%;
+	text-align: center;
 }
 
 nav.nav-header, nav.nav-footer {
@@ -125,4 +126,12 @@ footer {
 
 .footer-image-container img {
 	width: 100%;
+}
+
+.f-img {
+	width: 100%;
+	height: 30vh;
+	background-image: url('assets/footer_img.jpg');
+	background-size: cover;
+	background-position: center;
 }
