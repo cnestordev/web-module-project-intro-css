@@ -53,7 +53,11 @@ nav.nav-header, nav.nav-footer {
 
 .car {
 	position: relative;
-	animation-name: move;
+}
+
+.car:hover {
+	animation-name: drive;
+	animation-duration: 1s;
 }
 
 .main-header {
@@ -156,4 +160,10 @@ footer {
 	0% {top: 0px;}
 	50%{top: -5px;}
 	100%{top: 0px;}
+}
+
+@keyframes drive {
+	0%{right: 0px}
+	50%{right: 5px}
+	100%{right: 0px}
 }
