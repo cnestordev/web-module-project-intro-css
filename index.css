@@ -60,6 +60,15 @@ nav.nav-header, nav.nav-footer {
 	animation-duration: 1s;
 }
 
+.campfire {
+	position: relative;
+}
+
+.campfire:hover {
+	animation-duration: 1.5s;
+	animation-name: tilt;
+}
+
 .main-header {
 	text-align: center;
 	margin-bottom: 3%;
@@ -77,7 +86,9 @@ nav.nav-header, nav.nav-footer {
 
 .header-description-container {
 	display: inline-block;
-	width: 45%
+	width: 45%;
+	position: relative;
+	top: -25px;
 }
 
 .header-description-container > h1 {
@@ -163,7 +174,14 @@ footer {
 }
 
 @keyframes drive {
-	0%{right: 0px}
-	50%{right: 5px}
-	100%{right: 0px}
+	0% {left: 0px;}
+	50% {left: -20px;}
+	100% {left: 0px;}
+}
+
+@keyframes tilt {
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(10deg);}
+	50% {transform: rotate(-10deg);}
+	100% {transform: rotate(0deg);}
 }
