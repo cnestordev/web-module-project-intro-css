@@ -65,8 +65,10 @@ nav.nav-header, nav.nav-footer {
 }
 
 .campfire:hover {
-	animation-duration: 1.5s;
-	animation-name: tilt;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-name: burn-tilt;
+	animation-timing-function: ease-out;
 }
 
 .main-header {
@@ -179,9 +181,9 @@ footer {
 	100% {left: 0px;}
 }
 
-@keyframes tilt {
-	0% {transform: rotate(0deg);}
-	25% {transform: rotate(10deg);}
-	50% {transform: rotate(-10deg);}
-	100% {transform: rotate(0deg);}
+@keyframes burn-tilt {
+	25% {filter: drop-shadow(0px -2px 5px #f72916); transform: rotate(2deg);}
+	50% {filter: drop-shadow(0px -2px 6px #f72916); transform: rotate(0deg);}
+	75% {filter: drop-shadow(0px -2px 7px #f72916); transform: rotate(-2deg);}
+	100% {filter: drop-shadow(0px -1px 1px #f72916); transform: rotate(0deg);}
 }
